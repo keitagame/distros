@@ -224,7 +224,7 @@ CHROOT_EOF
 
   chmod +x "${CHROOT_DIR}/tmp/setup.sh"
   info "chroot 内でシステム設定スクリプトを実行中..."
-  chroot "${CHROOT_DIR}" /tmp/setup.sh
+  chroot "${CHROOT_DIR}" ./tmp/setup.sh
   log "chroot 設定完了"
 
   # アンマウント
