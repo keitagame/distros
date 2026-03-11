@@ -27,7 +27,7 @@ ARCH="amd64"
 SUITE="noble"           # Ubuntu 24.04 base
 MIRROR="http://archive.ubuntu.com/ubuntu"
 
-WORK_DIR="/home/claude/distro-build"
+WORK_DIR=""
 CHROOT_DIR="${WORK_DIR}/chroot"
 ISO_DIR="${WORK_DIR}/iso"
 OUTPUT_ISO="${WORK_DIR}/${DISTRO_NAME}-${DISTRO_VERSION}-${ARCH}.iso"
