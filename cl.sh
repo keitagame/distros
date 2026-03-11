@@ -96,6 +96,7 @@ configure_chroot() {
   cp /etc/resolv.conf "${CHROOT_DIR}/etc/resolv.conf" 2>/dev/null || true
 
   # ─── chroot 内スクリプト生成 ──────────────────────────────────────────────
+  mkdir "${CHROOT_DIR}/tmp"
   cat > "${CHROOT_DIR}/tmp/setup.sh" << 'CHROOT_EOF'
 #!/bin/bash
 set -euo pipefail
